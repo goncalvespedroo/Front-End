@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>questão 4</title>
+</head>
+<body>
+  <script>
+    function q4CriarEstruturaHtmlCss() {
+      const html = `
+        <header class="header">
+          <h1>Cabeçalho</h1>
+        </header>
+        <main class="main">
+          <div class="coluna">Olá a todos, tudo bom! Me chamo jão Pedro, sou um estudante de computação com uma pequena experiência em Node.js, JavaScript e TypeScript, venho estudando habilidades em criar sistemas eficientes e escaláveis. Meu objetivo é sempre encontrar soluções que não apenas atendam às necessidades dos usuários, mas que também sejam fáceis de manter e evoluir.</div>
+          <div class="coluna">Nos últimos anos, tive a oportunidade de analisar em diversos projetos que desafiaram meu conhecimento e me proporcionaram um crescimento. Acredito que a colaboração é fundamental no desenvolvimento de software, e tenho um grande apreço por equipes que priorizam a comunicação e o aprendizado contínuo. Cada projeto é uma chance de aprender algo novo, e estou sempre aberto a feedbacks.</div>
+          <div class="coluna">Atualmente, estou em busca de oportunidades que me permitam aplicar meu conhecimento e continuar aprendendo. Estou particularmente interessado em ambientes dinâmicos  e onde eu possa contribuir para o desenvolvimento de produtos. Se você procura um desenvolvedor comprometido e curioso, adoraria conversar!s</div>
+        </main>
+        <footer class="footer">
+          <p>Rodapé</p>
+        </footer>
+      `;
+
+      document.body.innerHTML = html;
+
+      const style = document.createElement('style');
+      style.innerHTML = `
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+        }
+
+        .header, .footer {
+          background-color: #003366;
+          color: white;
+          text-align: center;
+          padding: 1rem;
+        }
+
+        .main {
+          display: flex;
+          flex-grow: 1;
+          padding: 20px;
+        }
+
+        .coluna {
+          flex: 1;
+          background-color: #F0F0F0;
+          margin: 10px;
+          padding: 20px;
+          text-align: center;
+          border-radius: 8px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+          .main {
+            flex-direction: column;
+          }
+        }
+      `;
+
+      document.head.appendChild(style);
+    }
+
+    q4CriarEstruturaHtmlCss();
+  </script>
+</body>
+</html>
+

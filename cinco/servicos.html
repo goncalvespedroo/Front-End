@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sun4</title>
+  </head>
+  <body>
+    <script>
+      function q4CriarEstruturaHtmlCss() {
+        const html = `
+        <header class="header">
+          <h1>Serviços</h1>
+        </header>
+        <main class="main">
+          <div class="coluna">
+            <h1> Bronze </h1>
+            <h3> Acompanhe seu processo de forma simples e prática. Tenha acesso às principais atualizações e notificações periódicas. </h3>
+            <p> Funcionalidades:Consulta manual do andamento do processo,Notificações por e-mail com resumo semanal,Acesso ao histórico básico de movimentações.</p>
+ 
+            <a href="form.html" class="btn-compra">49,90/mês</a>
+          </div>
+          <div class="coluna">
+            <h1> Preata </h1>
+            <h3>Atualizações automáticas e detalhadas na palma da sua mão. Mantenha-se sempre informado com mais funcionalidades. </h3>
+            <p> Funcionalidades: consulta automática do processo, notificações em tempo real por e-mail e SMS, relatórios detalhados das movimentações processuais, suporte via chat para dúvidas relacionadas ao processo
+</p>
+ 
+            <a href="form.html" class="btn-compra">99,90/mês</a>
+          </div><div class="coluna">
+            <h1> Ouro </h1>
+            <h3> Experiência completa e personalizada. Acompanhe seu processo com todos os recursos avançados e suporte prioritário.</h3>
+            <p> Funcionalidades: consulta automática e ilimitada, notificações personalizadas em tempo real por e-mail, SMS e aplicativo, relatórios completos e histórico completo das movimentações, acompanhamento de prazos e alertas de urgência, suporte prioritário 24h via chat e e-mail.</p>
+ 
+            <a href="form.html" class="btn-compra">149,90/mês</a>
+          </div>
+        </main>
+        <footer class="footer">
+          <p>Rodapé</p>
+        </footer>
+      `;
+
+        document.body.innerHTML = html;
+
+        const style = document.createElement("style");
+        style.innerHTML = `
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e4e4e4; /* Cor de fundo do corpo */
+}
+
+.header, .footer {
+  background-color: #082435; /* Cor do cabeçalho e rodapé */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.main {
+  display: flex;
+  flex-grow: 1;
+  padding: 20px;
+  justify-content: center; /* Centraliza as colunas no eixo horizontal */
+  align-items: flex-start; /* Alinha no topo */
+}
+
+.coluna {
+  flex: 1;
+  max-width: 350px; /* Limita a largura máxima da coluna */
+  background-color: #F0F0F0; /* Cor de fundo da coluna */
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+.coluna h1 {
+  font-size: 2.5rem;
+  color: #d4a017; /* Cor Bronze */
+  margin-bottom: 10px;
+}
+
+.coluna h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.coluna p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.btn-compra {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #082435;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.4rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-compra:hover {
+  background-color: #0056b3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column; /* Coloca as colunas em coluna ao invés de linha */
+  }
+
+  .coluna {
+    max-width: 90%; /* Aumenta a largura máxima em telas pequenas */
+    padding: 15px;
+  }
+
+  .coluna h1 {
+    font-size: 2rem;
+  }
+
+  .coluna h3 {
+    font-size: 1.2rem;
+  }
+
+  .coluna p {
+    font-size: 1.1rem;
+  }
+
+  .btn-compra {
+    font-size: 1.2rem;
+    padding: 8px 15px;
+  }
+}
+
+      `;
+
+        document.head.appendChild(style);
+      }
+
+      q4CriarEstruturaHtmlCss();
+    </script>
+  </body>
+</html>

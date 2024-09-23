@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  html {
+    font-size: 65.5%;
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #e4e4e4;
+    color: black;
+  }
+  
+  header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .logo {
+    font-size: 3rem;
+    color: #082435;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+  }
+  
+  nav a {
+    font-size: 1.8rem;
+    color: #082435;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+  }
+  
+  nav a:hover,
+  nav a.active {
+    color: #f9a413;
+    border-bottom: 3px solid #f9a413;
+  }
+  
+  section {
+    min-height: 100vh;
+    padding: 5rem 9%;
+  }
+  
+  .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: #e4e4e4;
+  }
+  
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .home-content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #082435;
+  }
+  
+  span {
+    color: #f9a413;
+  }
+  
+  .home-content h3 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  .home-img {
+    border-radius: 50%;
+  }
+  
+  .home-img img {
+    width: 32vw;
+    border-radius: 50%;
+  }
+  
+  .btn-saiba-mais {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #082435;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .btn-saiba-mais:hover {
+    background-color: #007BFF;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .home {
+      flex-direction: column; /* Transforma todos os elementos em uma coluna */
+      gap: 2rem; /* Ajusta o espaço entre os elementos */
+    }
+  
+    .home-img img {
+      width: 60vw; /* Aumenta um pouco a largura da imagem em telas menores */
+    }
+  
+    .home-content {
+      align-items: center; /* Centraliza os textos e o botão */
+      text-align: center; /* Centraliza o conteúdo de texto */
+    }
+  
+    .home-content h1 {
+      font-size: 4rem; /* Reduz o tamanho do título em telas menores */
+    }
+  
+    .home-content h3 {
+      font-size: 2.5rem; /* Reduz o tamanho do subtítulo em telas menores */
+    }
+  
+    .btn-saiba-mais {
+      padding: 10px 15px; /* Ajusta o tamanho do botão */
+      font-size: 1.6rem; /* Ajusta o tamanho do texto do botão */
+    }
+  }
+  

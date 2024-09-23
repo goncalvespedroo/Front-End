@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Formulario de compras e contato</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulário de Compra</h2>
+        <form id="compra-form">
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="plano">Selecione seu Plano:</label>
+                <select id="plano" name="plano" required>
+                    <option value="bronze">Plano Bronze - R$ 49,90/mês</option>
+                    <option value="avancado">Plano Avançado - R$ 99,90/mês</option>
+                    <option value="premium">Plano Premium - R$ 149,90/mês</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="mensagem">Mensagem (opcional):</label>
+                <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+            </div>
+    
+            <button type="submit" class="btn-compra">Enviar</button>
+        </form>
+    </div>
+    
+</body>
+</html>
